@@ -3,7 +3,7 @@ def iterate(f, x, n):
     res = []
     for i in range(n):
         val = x
-        for j in range(i + 1):
+        for _ in range(i + 1):
             val = f(val)
 
         res.append(val)
