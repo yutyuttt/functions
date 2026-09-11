@@ -1,11 +1,9 @@
 # 1
 def iterate(f, x, n):
     res = []
-    for i in range(n):
-        val = x
-        for _ in range(i + 1):
-            val = f(val)
-
+    val = x
+    for _ in range(n):
+        val = f(val)
         res.append(val)
     return res
 
